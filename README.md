@@ -5,3 +5,24 @@ Tugas Pengganti pertemuan 4 pemrograman terstruktur
   using namespace std;
   
 int main () {
+
+int matriks1[100][100], matriks2[100][100], hasil[100][100];
+  int i, j, k, a, b, c, d, jumlah = 0;
+  cout << "Masukkan jumlah baris matriks pertama: ";
+  cin >> a;
+  cout << "Masukkan jumlah kolom matriks pertama: ";
+  cin >> b;
+  cout << "Masukkan jumlah baris matriks kedua: ";
+  cin >> c;
+  cout << "Masukkan jumlah kolom matriks kedua: ";
+  cin >> d;
+
+  if(b != c){
+    cout << "Matriks tidak dapat dikalikan satu sama lain"<<endl;
+  } else {
+    cout << "Masukkan elemen matriks pertama: "<<endl;
+    for(i = 0; i < a; i++){
+      for(j = 0; j < b; j++){
+        cin >> matriks1[i][j];
+      }
+    }
